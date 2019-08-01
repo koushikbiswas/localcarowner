@@ -424,7 +424,7 @@ p{ margin:0; padding:0;}
 a.fillformdiv{text-decoration: none;}
 a.fillformdiv:hover{text-decoration: none;}
 
-.combinemobilemarketing{background: #025f9a url(../../assets/images/combinemobilebg.png) no-repeat left center; padding:40px 0px; position: relative; overflow: hidden;}
+.combinemobilemarketing{background: #025f9a url(../../assets/images/combinemobilebg.png) no-repeat left top -10%; padding:40px 0px; position: relative; overflow: hidden;}
 .combinemobilemarketingcontent{position:relative; z-index:99; padding-left:38%;}
 .combinemobilemarketing h2{  font-family:'OpenSans-Bold'; font-size:60px; color:#fff; text-transform:uppercase; text-shadow:0 0 5px #888; margin:0; padding:0 0 20px 0; text-align:left; background:url(../../assets/images/devider1.jpg) no-repeat left bottom;}
 .combinemobilemarketing .car_logo_block p{  font-family:'OpenSans-Regular'; font-size:22px; color:#fff; margin:0; padding:0; text-align:left;}
