@@ -76,16 +76,21 @@ toTop() {
       );
   }
 
-  get formValidate() { return this.myform.controls; }
+  // get formValidate() { return this.myform.controls; }
 
   doSubmit(){
-    // this.successmodal = true;
+    document.getElementById("myModal")
+    this.successmodal = true;
 
     this.formSubmited = true;
     console.log(this.myform.value);
+    for (let i in this.myform.controls) {
+      this.myform.controls[i].markAsTouched();
+    }
     if (this.myform.valid) {
       let link = 'http://166.62.39.137:5001/addlocalcarownerLanding';
       let data = (this.myform.value);
+      this.successmodal = true;
       this.http.post(link, data)
           .subscribe(res => {
   
@@ -95,9 +100,9 @@ toTop() {
             if (result.status == 'success') {
   
               this.myform.reset();
-              
               setTimeout(()=>{
                 this.successmodal = true;
+                console.log(this.successmodal)
               },4000);
            }
          })
@@ -108,6 +113,7 @@ toTop() {
     console.log('on blur .....');
     form.controls[val].markAsUntouched();
   }
+
 
 
 }
