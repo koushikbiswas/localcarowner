@@ -1,0 +1,235 @@
+@media(max-width:1680px) {
+
+    .localcar_roundwrapper h3{ font-size: 15px; line-height: 20px;}
+    .car_text8{  left:-12px; top: 220px; width: 390px; background: url("../../assets/images/con_8img.png") no-repeat 40px top;}
+}
+
+
+@media(max-width:1660px) {
+    .partnerswrapper .car_logo_block{width:100%; margin:40px auto;}
+    .internalmarketing .car_logo_block{width:100%; margin:40px auto;}
+}
+
+
+
+@media(max-width:1510px) {
+
+
+    .services_wrapper .sertextdiv {
+        min-height: 225px;
+    }
+
+
+    .middleblock_text h2{ font-size: 36px;}
+
+    .middleblock_text h3{ width: 660px;}
+
+
+    .cartext_wrapper{ width: 100%; height: auto; padding:0 20px!important; background: url("../../assets/images/text_middle_conbg.jpg") no-repeat; background-size: cover; }
+
+    .localcar_roundwrapper{ background: none; width: 100%; height: auto; padding: 0px!important; margin: 0!important;}
+
+    .local_carlogo{ display: block; width: 100%; position: inherit; top:0px; left: 0px; margin-top: 40px;  margin-bottom: 40px; float: none; overflow: hidden;}
+    .local_carlogo img{ display: block; margin: 0 auto;  max-width: 84%;}
+
+
+
+    .car_text1{ width: 100%; background-position:  center top; position: inherit; top: 0; left: 0; right: 0; width:30.3%; height: 400px; padding: 175px 0 0 0; margin: 0 1.5%; float:left;}
+
+    .car_text2{ width: 100%; background-position:  center top; position: inherit; top: 0; left: 0; right: 0; width:30.3%; height: 400px; padding: 175px 0 0 0; margin: 0 1.5%; float:left;}
+
+    .car_text3{ width: 100%; background-position:  center top; position: inherit; top: 0; left: 0; right: 0; width:30.3%; height: 400px; padding: 175px 0 0 0; margin: 0 1.5%; float:left;}
+
+
+    .car_text4{ width: 100%; background-position:  center top; position: inherit; top: 0; left: 0; right: 0; width:30.3%; height: 400px; padding: 175px 0 0 0; margin: 0 1.5%; float:left;}
+
+    .car_text5{ width: 100%; background-position:  center top; position: inherit; top: 0; left: 0; right: 0; width:30.3%; height: 400px; padding: 175px 0 0 0; margin: 0 1.5%; float:left;}
+
+    .car_text6{ width: 100%; background-position:  center top; position: inherit; top: 0; left: 0; right: 0; width:30.3%; height: 400px; padding: 175px 0 0 0; margin: 0 1.5%; float:left;}
+
+
+
+    .car_text7{ width: 100%; background-position:  center top; position: inherit; top: 0; left: 0; right: 0; width:30.3%; height: 400px; padding: 175px 0 0 0; margin: 0 1.5%; float:left;}
+
+    .car_text8{ width: 100%; background-position:  center top; position: inherit; top: 0; left: 0; right: 0; width:30.3%; height: 400px; padding: 175px 0 0 0; margin: 0 1.5%; float:left;}
+
+    .car_text9{ width: 100%; background-position:  center top; position: inherit; top: 0; left: 0; right: 0; width:30.3%; height: 400px; padding: 175px 0 0 0; margin: 0 1.5%; float:left;}
+    .localcar_roundwrapper br{  display: none;}
+}
+
+
+@media(max-width:1300px) {
+    .lookingmoredatatitle h3 {
+        font-size: 21px;
+    }
+    .top_bannerblock{ background-position: -100px top;}
+    .top_bannerblock .logo{ width: 300px; margin: 16px;}
+
+
+
+    .topform_wrapper .form_mainbox {
+        background: #fff none repeat scroll 0 0;
+        box-shadow: 0 0 20px -4px rgba(0, 0, 0, 0.75);
+        float: right;
+        margin-right: -50px;
+        padding: 8px;
+        width: 360px;
+    }
+}
+
+
+@media(max-width:1199px) {
+    .services_wrapper .row {
+        flex-wrap: wrap;
+    }
+    .form_mainbox .subbtn {
+        margin: 30px auto 0px;
+    }
+
+    .footer_newblock_wrapper{ width: 100%; padding: 25px 0; background-size: cover; height: auto;}
+
+    .footer_newblock_wrapper .footer_newblocklink{ width: 100%; height:auto; margin: 0 auto; margin-top: 0px; background:none; }
+
+
+    .footer_newblock_wrapper .footer_newblocklink a h2{ display: block; margin: 0; padding: 0; text-align: center; font-family: 'squada_oneregular'; font-size: 44px; color: #fbc404;}
+
+    .footer_newblock_wrapper .footer_newblocklink a span{  margin-top:0px; color: #fff;  }
+
+    .top_bannertext1 h2{ width: 100%; margin: 0 auto;}
+
+    .top_bannertext2 h2{ width: 100%; margin: 0 auto;}
+
+    .topform_wrapper{ position: inherit; top: 0px; width: 100%; padding: 0 !important;}
+    .topform_wrapper .form_mainbox{ width: 100%; float: none; margin: 0 auto; box-shadow: none; padding: 0; padding-bottom: 10px;}
+    .topform_wrapper .container{ width: 100%;}
+
+    .bannertoptextcon{ position: absolute; bottom: 0px; width: 100%;}
+
+    .bannertoptextcon h1{ width: 100%; margin: 0 auto;}
+
+    .form_maindiv{ width: 90%; margin: 30px auto;}
+
+    .middleblock_wrapper{ background: #ccc url("../../assets/images/bgimg1.jpg") no-repeat top right; background-size: 1200px;  height:auto; padding:660px 0 0px 0!important; position: relative; }
+    .middleblock_text h3{ position: inherit; width: 100%; margin: 0; text-align: center;}
+
+    .middleblock_text h2{ padding-left: 10px; padding-right: 10px; margin-bottom: 40px;}
+
+    .middleblock_text{ padding: 0px;}
+
+    .cartext_wrapper{ width: 100%; height: auto; padding:0 0px!important; background: url("../../assets/images/text_middle_conbg.jpg") no-repeat; background-size: cover; }
+
+    .localcar_roundwrapper{ background: none; width: 100%; height: auto; padding: 0px!important; margin: 0!important;}
+
+
+
+    .local_carlogo{ display: block; width: 100%; position: inherit; top:0px; left: 0px; margin-top: 40px;  margin-bottom: 40px; float: none; overflow: hidden;}
+
+
+    .car_text1{ background-position:  center top; position: inherit; top: 0; left: 0; right: 0; width: 100%; height: auto; padding: 175px 0 0 0; margin: 0 auto; margin-bottom: 20px; float: none;}
+
+    .car_text2{ background-position:  center top; position: inherit; top: 0; left: 0; right: 0; width: 100%; height: auto; padding: 175px 0 0 0; margin: 0 auto; margin-bottom: 20px; float: none;}
+
+    .car_text3{ background-position:  center top; position: inherit; top: 0; left: 0; right: 0; width: 100%; height: auto; padding: 175px 0 0 0; margin: 0 auto; margin-bottom: 20px; float: none;}
+
+    .car_text4{ background-position:  center top; position: inherit; top: 0; left: 0; right: 0; width: 100%; height: auto; padding: 175px 0 0 0; margin: 0 auto; margin-bottom: 20px; float: none;}
+
+    .car_text5{ background-position:  center top; position: inherit; top: 0; left: 0; right: 0; width: 100%; height: auto; padding: 175px 0 0 0; margin: 0 auto; margin-bottom: 20px; float: none;}
+
+    .car_text6{ background-position:  center top; position: inherit; top: 0; left: 0; right: 0; width: 100%; height: auto; padding: 175px 0 0 0; margin: 0 auto; margin-bottom: 20px; float: none;}
+
+    .car_text7{ background-position:  center top; position: inherit; top: 0; left: 0; right: 0; width: 100%; height: auto; padding: 175px 0 0 0; margin: 0 auto; margin-bottom: 20px; float: none;}
+
+    .car_text8{ background-position:  center top; position: inherit; top: 0; left: 0; right: 0; width: 100%; height: auto; padding: 175px 0 0 0; margin: 0 auto; margin-bottom: 20px;  float: none;}
+
+    .car_text9{ background-position:  center top; position: inherit; top: 0; left: 0; right: 0; width: 100%; height: auto; padding: 175px 0 0 0; margin: 0 auto; margin-bottom: 20px; float: none;}
+    
+    .car_text9, .car_text8, .car_text7, .car_text6, .car_text5, .car_text4, .car_text3, .car_text2, .car_text1 {
+        width: 90%!important;
+    }
+
+
+    .services_wrapper .col-md-12{ width: 100%; float: none; margin: 0px auto;}
+    .services_wrapper .col-md-12:nth-of-type(2){ margin: 40px 0;}
+
+    .services_wrapper .sertextdiv{ height: auto; text-align: center; padding: 0px; margin: 0px;    min-height: 1px;}
+
+    .services_wrapper .sertextdiv h4{ width: 100%; height: auto; padding: 20px 10px; border: none; text-align: center; display: block;  margin: 0px;}
+
+    .partnerswrapper .fillformdiv{ width: 90%; background-image: none; line-height: 40px;}
+    .internalmarketing .fillformdiv{ width: 90%; background-image: none; line-height: 40px;}
+
+    .services_wrapper{ background:#025f9a; padding:40px 10px;}
+
+    .bannertoptextcon h1{ font-size: 30px;}
+
+    .topform_wrapper .form_mainbox h1{ font-size: 40px;}
+
+    .top_bannertext1 h2{ padding-left: 8px; padding-right: 8px; font-size: 30px;}
+    .top_bannertext2 h2{ padding-left: 8px; padding-right: 8px; font-size: 26px;}
+}
+@media(max-width:991px) {
+    
+    .lookingmoredata h2 {
+        font-size: 36px;
+    }
+    .lookingmoredata .car_logo_block p {
+        font-size: 18px;
+        line-height: normal;
+    }
+
+    .lookingmoredatatitle {
+        min-height: 1px;
+        justify-content: center;
+    }
+.lookingmoredatasingle {
+    width: 100%;
+    margin: .5% 1% 30px;
+    background-color: #fff;
+    padding: 0;
+}
+
+.lookingmoredatadiv {
+    flex-wrap: wrap;
+}
+
+}
+
+@media(max-width:767px) {
+    .container {
+        padding-right: 0px !important;
+        padding-left: 0px !important;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .top_bannerblock{    padding-right: 0px !important;
+        padding-left: 0px !important; width: 100%; position: relative; background: url("../../assets/images/bannerimg.jpg") no-repeat -120px top; background-size:970px; height:auto; padding-top: 290px;}
+    .top_bannerblock .logo{  display: none;}
+
+    .logomobile{ display: block; width: 100%;  background:#ccc; text-align: center; padding: 15px 0 0 0;}
+    .logomobile img{ display: block; margin: 0 auto; max-width: 90%;}
+
+    .bannertoptextcon {
+        bottom: 0;
+        position: inherit;
+        width: 100%;
+    }
+
+    .partnerswrapper h2{ font-size: 54px;}
+
+    .internalmarketing h2{ font-size: 54px;}
+}
+
+@media(max-width:700px) {
+    .middleblock_wrapper{ background: #ccc url(../../assets/images/bgimg1.jpg) no-repeat top right; background-size: 800px;  height:auto; padding:450px 0 0px 0!important; position: relative; }
+
+
+
+}
+
+
+@media(max-width:480px) {
+    .middleblock_wrapper{ background: #ccc url(../../assets/images/bgimg1.jpg) no-repeat top right; background-size: 500px;  height:auto; padding:290px 0 0px 0!important; position: relative; }
+
+
+
+}

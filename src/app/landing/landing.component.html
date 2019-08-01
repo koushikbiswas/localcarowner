@@ -1,0 +1,362 @@
+<div class="logomobile">
+  <a href="javascript:void(0)"><img src="assets/images/logo.png"/></a>
+</div>
+
+<div class="container-fluid top_bannerblock">
+  <div class="logo">
+    <a href="javascript:void(0)"><img src="assets/images/logo.png"/></a>
+  </div>
+  <div class="bannertoptextcon">
+    <div class="container ">
+      <h1>THE ULTIMATE IN DIGITAL MARKETING FOR NEW CAR DEALERSHIPS!</h1>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid topform_wrapper">
+  <div class="container">
+    <div class="form_mainbox">
+      <h1>Get your free report</h1>
+      <h2>This specialized targeted report is only a quick submission away!</h2>
+
+      <div class="form_maindiv">
+        <form [formGroup]="myform" (submit)="doSubmit()">
+          <div class="form-group">
+            <input class="form-control" placeholder="First Name" type="text" [formControl]="myform.controls['fname']" (blur)="inputUntouch(myform, 'fname')" />
+            <span *ngIf="myform.controls['fname'].touched && !myform.controls['fname'].valid" class="errortext" >First Name is required</span>
+          </div>
+          <div class="form-group">
+            <input class="form-control" placeholder="Last Name" type="text" [formControl]="myform.controls['lname']"
+ (blur)="inputUntouch(myform, 'lname')"/>
+            <span *ngIf="myform.controls['lname'].touched && !myform.controls['lname'].valid" class="errortext">Last Name is required</span>
+          </div>
+
+          <div class="form-group">
+            <input class="form-control" placeholder="Dealership" type="text" [formControl]="myform.controls['dealer']" (blur)="inputUntouch(myform, 'dealer')"/>
+            <span *ngIf="myform.controls['dealer'].touched && !myform.controls['dealer'].valid" class="errortext">Last Name is required</span>
+          </div>
+
+          <div class="form-group">
+            <input class="form-control" placeholder="Email" type="email" [formControl]="myform.controls['email']"
+ (blur)="inputUntouch(myform, 'email')"/>
+            <span *ngIf="myform.controls['email'].touched && !myform.controls['email'].valid" class="errortext">Email Number is required</span>
+          </div>
+
+          <div class="form-group">
+            <input class="form-control" placeholder="Phone Number" type="text" [formControl]="myform.controls['phone']"
+ (blur)="inputUntouch(myform, 'phone')"/>
+            <span *ngIf="myform.controls['phone'].touched && !myform.controls['phone'].valid" class="errortext">Phone Number is required</span>
+          </div>
+
+          <div class="form-group">
+            <input class="form-control" placeholder="Zip Code" type="text" [formControl]="myform.controls['zipcode']"
+ (blur)="inputUntouch(myform, 'zipcode')"/>
+ <span *ngIf="myform.controls['zipcode'].touched && !myform.controls['zipcode'].valid" class="errortext">Zip Code is required</span>
+          </div>
+
+          <div class="form-group">
+              <input class="form-control" placeholder="Additional Zip Code" type="text" [formControl]="myform.controls['addzipcode']"
+   (blur)="inputUntouch(myform, 'addzipcode')"/>
+   <span *ngIf="myform.controls['addzipcode'].touched && !myform.controls['addzipcode'].valid" class="errortext">Zip Code is required</span>
+          </div>
+
+          <div class="form-group">
+            <input class="subbtn" type="submit" value="Get My Report" />
+          </div>
+          
+        </form>
+      </div>
+     
+    </div>
+
+    <div class="clearfix"></div>
+  </div>
+</div>
+
+<div class="container-fluid top_bannertext1">
+  <div class="container">
+    <h2>
+      MARKETING CAMPAIGNS THAT WORK – THROUGH GEO FENCING AND TARGETED EMAIL WE CAN REACH THOUSANDS OF LOCAL CAR BUYERS.
+    </h2>
+  </div>
+</div>
+
+<div class="container-fluid top_bannertext2">
+  <div class="container">
+    <h2>
+      We have the largest car buyer database in the nation with over 150 million records. Sky rocket your sales and have customers running to your dealership.
+    </h2>
+  </div>
+</div>
+
+<div class="container-fluid middleblock_wrapper">
+  <div class="middleblock_text">
+    <h2>
+      We Can Reach Local Car Owners <br />
+
+      that Love Your Cars!
+    </h2>
+
+    <h3>
+      <span>Mobile display GEO</span> Fencing and email marketing is the most powerful way to reach a genuinely targeted car buying audience. We have over 1,000 lifestyle selects on the buyers in our database. You can specialize your desired data points and we can market to just that list!
+    </h3>
+  </div>
+</div>
+
+<div class="container-fluid services_wrapper">
+
+  <div class="row">
+      <div class=" col-lg-4 col-md-12 col-sm-12 col-xs-12">
+          <div class="serimgdiv">
+            <img alt="#" src="assets/images/ser_1.jpg" />
+            <h2>Mobile GEOFencing</h2>
+          </div>
+      
+          <div class="sertextdiv">
+            <h4>
+              The mobile device market is the fastest-growing market in the digital space. GEOfencing allows dealers to throw up a virtual fence around an area and then send targeted advertising to any device that has crossed that fence line.
+            </h4>
+          </div>
+        </div>
+      
+        <div class=" col-lg-4 col-md-12 col-sm-12 col-xs-12">
+          <div class="serimgdiv">
+            <img alt="#" src="assets/images/ser_2.jpg" />
+            <h2>eMail Marketing</h2>
+          </div>
+      
+          <div class="sertextdiv">
+            <h4>Most of the data we have in our 150 million records are coupled with the email addresses of the members in our lists. Combine digital marketing directly with email marketing campaign drops that we manage for you in-house.</h4>
+          </div>
+        </div>
+      
+        <div class=" col-lg-4 col-md-12 col-sm-12 col-xs-12">
+          <div class="serimgdiv">
+            <img alt="#" src="assets/images/ser_3.jpg" />
+            <h2>get your free report</h2>
+          </div>
+      
+          <div class="sertextdiv">
+            <h4>
+              Get your free report and we would call to you about the options we have
+              to reach this audience!
+            </h4>
+          </div>
+        </div>
+  </div> 
+
+  
+</div>
+
+
+<div class="container-fluid internalmarketing">
+  <div class="internalmarketingcontent">
+      <h2>Residential GEO Fencing</h2>  
+      <div class="car_logo_block">
+        <p>
+          Most car dealers use GEOFencing in marketing strategies. They fence their competition and try to entice their customers. They fence trade shows and complementary businesses like car washes and auto parts stores, sending ads to customers who may have cars on their minds.
+   
+          What LocalCarOwner.com does differently allows us to take GEOFencing to the next level. We have developed tech that allows us to fence residential homes down to the precise property lines. Combining our GEOFencing capabilities with Big data segmentation, we can send Microtargeted advertising to any device that crosses our fence line.
+             
+              <span>This is extremely precise, Microtargeted marketing sent to only the most highly-qualified potential customers. It’s also the advantage you’ve been looking for to drive business to your dealership’s doors!
+            
+              Our technology has a full managed dashboard where you can get reports, set CPM limits, max bids and add as many campaigns as you would like.  You are able to access this either self serve or we can manage it for you!</span>
+            </p>    
+        <div class="clearfix"></div>
+      </div>
+    
+      <div class="fillformdiv">Get your free report and let’s get started!</div>
+  </div>
+
+    
+    <div class="internalmarketingbgcolor"></div>
+  </div> 
+
+
+  <div class="container-fluid combinemobilemarketing">
+    <div class="combinemobilemarketingcontent">
+      <h2>Combining Mobile Marketing and Email Marketing</h2>  
+      <div class="car_logo_block">
+        <p>We provide targeted email services to blast out your advertising to qualified buyers in your area. Our email lists are curated according to criteria like customer income, credit rating, preferred car brands, and car buying behavior. This helps us find the most highly-qualified potential buyers and deliver your advertising to them before competing dealerships are aware they’re in the market.
+  
+        Email advertising has proven to bring in customers, but if you feel you need to increase your reach and conversion rate, we can double up our email campaigns with our Mircotarget GEOFence mobile marketing. Using this combination of powerful marketing tools will increase your ability to reach customers and drive them to your dealership!</p>
+      
+      <div class="clearfix"></div>
+      </div>    
+      <div class="fillformdiv">Get your free report and let’s get started!</div>
+    </div>  
+  </div>
+
+<div class="container-fluid cartext_wrapper">
+    <h1>Our eMail marketing lifecycle follows a <br>powerful process</h1>
+  <div class="localcar_roundwrapper">
+    <div class="local_carlogo"><img src="assets/images/logo2.png" /></div>
+    
+
+    <div class="car_text1">
+      <h2>First we</h2>
+      <h3>
+        Run a full count from our database of the<br />Quality Car Owners that
+        have purchased<br />
+        cars less than 8 years old within<br />
+        your area of reach.
+      </h3>
+    </div>
+
+    <div class="car_text2">
+      <h2>then we</h2>
+      <h3>
+        Determine how many Car Owners are<br />
+        driving the brands you and your<br />
+        competitors sell.
+      </h3>
+    </div>
+
+    <div class="car_text3">
+      <h2>we provide</h2>
+      <h3>
+        You this free report and from that count you tell<br />us which
+        potential prospects<br />
+        you want to target.
+      </h3>
+    </div>
+
+    <div class="car_text4">
+      <h2>then our</h2>
+      <h3>
+        Experts will analyze your marketing<br />
+        messages and help you determine how best to<br />get open and click
+        rates to your<br />
+        targeted prospects.
+      </h3>
+    </div>
+    <div class="car_text5">
+      <h2>WITH OUR 100%</h2>
+      <h3>
+        inbox safe sever certified guarantee we<br />broadcast your message
+        hitting every<br />
+        inbox on the customized list.
+      </h3>
+    </div>
+    <div class="car_text6">
+      <h2>WITHIN 48 HOURS</h2>
+      <h3>
+        of the broadcast we give you all the statistics<br />
+        of messages delivered, opened and clicked<br />
+        by your targeted prospects.
+      </h3>
+    </div>
+    <div class="car_text7">
+      <h2>7 DAYS AFTER</h2>
+      <h3>
+        The initial broadcast we will remarket your ad<br />with a new subject
+        line to everyone that<br />opened the email boosting your click<br />
+        through rates even more.
+      </h3>
+    </div>
+    <div class="car_text8">
+      <h2>we bring</h2>
+      <h3>
+        our marketing analytics full circle with our<br />
+        Match-back guarantee analysis. For 60 days after the<br />broadcast, if
+        you share with us the names of customers<br />that bought a car we will
+        share with you the record of<br />those that came from our opt in lists.
+      </h3>
+    </div>
+
+    <div class="car_text9">
+      <h2>AFTER PROVING</h2>
+      <h3>
+        The highly targeted success of our<br />
+        marketing programs we can do it as often as you<br />like. We add
+        hundreds of new car owners a<br />
+        week and can offer you quarterly and<br />
+        yearly contract discounts.
+      </h3>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid lookingmoredata">
+    <div class="lookingmoredatacontent">
+        <h2>LOOKING FOR MORE DATA FOR INTERNAL MARKETING?</h2>  
+        <div class="car_logo_block">
+          
+           
+
+          <div class="lookingmoredatadiv">
+            <div class="lookingmoredatasingle">
+                <div class="lookingmoredatatitle">
+                    <h3>WE CAN SELL YOU THE DATA YOU NEED FOR YOUR INTERNAL MARKETING PROGRAMS</h3>                    
+                  </div>
+                <p>Most factory dealers have inhouse marketing teams and are even hammering out inhouse cold calls.  We know that you are working your internal database and have customer information now. For example, you may be working with 20,000 records but really have more like 500,000 in your AOR that would be interested in buying from your dealership.</p>
+            </div>
+            <div class="lookingmoredatasingle">
+                <div class="lookingmoredatatitle">
+                    <h3>We can get you the rest of this data specialized and segmented for EXACLY who you are trying to target as your customers.</h3>
+                </div>
+                <p>We can provide your dealership with very specific car owner data in the same way that we do marketing through email and GEOfencing. If what you need is data for your internal marketing and outreach efforts, we can increase your access to local car buyer data.</p>
+            </div>
+          </div>
+        </div>            
+    </div>
+    <div class="lookingmoredatabgcolor"></div>
+</div>
+
+<div class="container-fluid partnerswrapper">
+  <h2>our partners</h2>
+
+  <div class="car_logo_block">
+    <img alt="#" src="assets/images/car_logo1.jpg" />
+    <img alt="#" src="assets/images/car_logo2.jpg" />
+    <img alt="#" src="assets/images/car_logo3.jpg" />
+    <img alt="#" src="assets/images/car_logo4.jpg" />
+    <img alt="#" src="assets/images/car_logo5.jpg" />
+    <img alt="#" src="assets/images/car_logo6.jpg" />
+    <img alt="#" src="assets/images/car_logo7.jpg" />
+    <img alt="#" src="assets/images/car_logo8.jpg" />
+    <img alt="#" src="assets/images/car_logo9.jpg" />
+    <img alt="#" src="assets/images/car_logo10.jpg" />
+    <img alt="#" src="assets/images/car_logo11.jpg" />
+    <img alt="#" src="assets/images/car_logo12.jpg" />
+    <img alt="#" src="assets/images/car_logo13.jpg" />
+    <img alt="#" src="assets/images/car_logo14.jpg" />
+    <img alt="#" src="assets/images/car_logo15.jpg" />
+    <img alt="#" src="assets/images/car_logo16.jpg" />
+    <img alt="#" src="assets/images/car_logo17.jpg" />
+    <img alt="#" src="assets/images/car_logo18.jpg" />
+
+    <div class="clearfix"></div>
+  </div>
+
+  <div class="fillformdiv">Fill out form above to get started right away!</div>
+</div>
+
+<div class=" container-fluid footer_newblock_wrapper">  
+    <div class="footer_newblocklink">
+      <a href="javascript:void(0)"><h2 > Get started today!</h2><span >Click Here</span></a> 
+    </div>
+</div>
+
+<div class="container-fluid footerwrapper">
+  <h2>© Copyright 2016 localcarowner - All Rights Reserved</h2>
+</div>
+
+<div class="modal fade localcarpopup" id="myModal" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button class="close" data-dismiss="modal" type="button">×</button>
+        <h4 class="modal-title"></h4>
+      </div>
+      <div class="modal-body">
+        <img alt="#" class="modallogo" src="assets/images/logo.png" />
+        <p>
+          Thank you for your interest in the LocalCarOwner.com services. Our
+          team will get back to your shortly.
+        </p>
+      </div>
+      <div class="modal-footer"></div>
+    </div>
+  </div>
+</div>
