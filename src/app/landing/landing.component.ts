@@ -14,14 +14,15 @@ export class LandingComponent implements OnInit {
   windowScrolled: boolean;
   public myform: FormGroup;
   public formSubmited: boolean = false;
+  public successmodal: any = false;
 
   constructor(public router: Router, public route: ActivatedRoute, private readonly meta: MetaService, public fb: FormBuilder, public http: HttpClient) {
     
-    this.meta.setTitle('Local Car Owner');
-    this.meta.setTag('og:description', 'Local Car Owner description ');
+    this.meta.setTitle('Local Car Owner ');
+    this.meta.setTag('og:description', 'THE ULTIMATE IN DIGITAL MARKETING FOR NEW CAR DEALERSHIPS! ');
     this.meta.setTag('og:title', 'Local Car Owner ');
     this.meta.setTag('og:type', 'www.localcarowner.com/');
-    this.meta.setTag('og:image', 'https://upload.wikimedia.org/wikipedia/commons/f/f8/superraton.jpg');
+    this.meta.setTag('og:image', 'https://www.localcarowner.com/assets/images/logo.png');
 
 
     this.myform = this.fb.group({
@@ -78,6 +79,7 @@ toTop() {
   get formValidate() { return this.myform.controls; }
 
   doSubmit(){
+    // this.successmodal = true;
     this.formSubmited = true;
     console.log(this.myform.value);
     if (this.myform.valid) {
@@ -93,10 +95,10 @@ toTop() {
             if (result.status == 'success') {
   
               this.myform.reset();
-              // this.successmodal = true;
+              
               setTimeout(()=>{
-  
-              },2000);
+                this.successmodal = true;
+              },4000);
            }
          })
       }

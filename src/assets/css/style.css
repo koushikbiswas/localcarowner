@@ -478,4 +478,15 @@ a.fillformdiv:hover{text-decoration: none;}
 .lookingmoredatatitle{width:100%; margin: 0; background-color: #00a9e7;padding: 14px; min-height: 122px; display: flex; align-items: center; border-bottom: 4px solid #333;}
 .lookingmoredatatitle h3{font-family:'OpenSans-Bold'; font-size:28px; color:#ffffff; text-transform:uppercase; margin:0; padding:0; text-align:center; height: 100%;}
 
+/* 
+.fade.localcarpopup{display: block; opacity: 1;} */
 
+/* .modal-open .modal {
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+.fade.localcarpopup {
+    opacity: 1;
+    display: block;
+    top:50%;
+} */

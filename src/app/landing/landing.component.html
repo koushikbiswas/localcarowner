@@ -72,9 +72,11 @@
    <!-- <span *ngIf="myform.controls['addzipcode'].touched && !myform.controls['addzipcode'].valid" class="errortext">Zip Code is required</span> -->
    <span *ngIf="formSubmited && formValidate.addzipcode.errors" class="errortext" >Additional Zip Code is required</span>
           </div>
-
           <div class="form-group">
-            <input class="subbtn" type="submit" value="Get My Report" />
+            <!-- <input class="" type="submit" value=""/> -->
+            <button type="submit" class="subbtn" data-toggle="modal" data-target="#myModal">
+              Get My Report
+            </button>
           </div>
           
         </form>
@@ -355,8 +357,10 @@
   <h2>© Copyright 2016 localcarowner - All Rights Reserved</h2>
 </div>
 
-<div class="modal fade localcarpopup" id="myModal" role="dialog">
-  <div class="modal-dialog">
+
+
+<div *ngIf="successmodal == true" class="modal fade localcarpopup" id="myModal"  tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button class="close" data-dismiss="modal" type="button">×</button>
@@ -373,3 +377,8 @@
     </div>
   </div>
 </div>
+
+
+<!-- Button to Open the Modal -->
+
+
