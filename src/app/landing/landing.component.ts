@@ -1,7 +1,9 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, HostListener } from '@angular/core';
 import { MetaService } from '@ngx-meta/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { HttpClient } from '@angular/common/http';
+import {Router, ActivatedRoute} from '@angular/router';
+
 
 @Component({
   selector: 'app-landing',
@@ -9,10 +11,11 @@ import { HttpClient } from '@angular/common/http';
   styleUrls: ['./landing.component.css']
 })
 export class LandingComponent implements OnInit {
-
+  windowScrolled: boolean;
   public myform: FormGroup;
+  public formSubmited: boolean = false;
 
-  constructor(private readonly meta: MetaService, public fb: FormBuilder, public http: HttpClient) {
+  constructor(public router: Router, public route: ActivatedRoute, private readonly meta: MetaService, public fb: FormBuilder, public http: HttpClient) {
     
     this.meta.setTitle('Local Car Owner');
     this.meta.setTag('og:description', 'Local Car Owner description ');
@@ -31,17 +34,51 @@ export class LandingComponent implements OnInit {
       addzipcode: ['', Validators.required],
     })
 
-    
   }
 
+  @HostListener("window:scroll", [])
+
+    onWindowScroll() {
+        if (window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop > 100) {
+            this.windowScrolled = true;
+        }
+        else if (this.windowScrolled && window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop < 10) {
+            this.windowScrolled = false;
+        }
+    }
+
+
+  scrollToTop() {
+    (function smoothscroll() {
+
+        var currentScroll = document.documentElement.scrollTop || document.body.scrollTop;
+
+        if (currentScroll > 0) {
+            window.requestAnimationFrame(smoothscroll);
+            window.scrollTo(0, currentScroll - (currentScroll / 8));
+        }
+
+    })();
+}
+ 
+toTop() {
+  document.getElementById("form_maindiv").scrollIntoView({behavior: 'smooth'});
+}
 
   ngOnInit() {
+    this.router.events.subscribe(() =>
+          window.scrollTo({
+              top: 0,
+              left: 0,
+              behavior: 'smooth'
+          })
+      );
   }
 
-
-
+  get formValidate() { return this.myform.controls; }
 
   doSubmit(){
+    this.formSubmited = true;
     console.log(this.myform.value);
     if (this.myform.valid) {
       let link = 'http://192.168.0.145/localcarownerformdetails';

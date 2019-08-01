@@ -6,6 +6,11 @@
 
 
 @media(max-width:1660px) {
+    .middleblock_text h2, .cartext_wrapper h1, .internalmarketing h2, .combinemobilemarketing h2, .lookingmoredata h2, .partnerswrapper h2 {font-size: 44px;}
+    .internalmarketing .car_logo_block p, .combinemobilemarketing .car_logo_block p, .lookingmoredata .car_logo_block p {font-size: 20px;}
+    .internalmarketing .fillformdiv, .combinemobilemarketing .fillformdiv, .partnerswrapper .fillformdiv {font-size: 20px;}
+    .top_bannertext1 h2 {font-size: 32px;}
+    
     .partnerswrapper .car_logo_block{width:100%; margin:40px auto;}
     .internalmarketing .car_logo_block{width:100%; margin:40px auto;}
 }
@@ -13,14 +18,18 @@
 
 
 @media(max-width:1510px) {
+    .top_bannertext2 h2 {width: 800px; font-size: 24px;}
+    .combinemobilemarketingcontent {padding-left: 48%;}
+    .middleblock_text h2, .cartext_wrapper h1, .internalmarketing h2, .combinemobilemarketing h2, .lookingmoredata h2, .partnerswrapper h2 {font-size: 32px;}
+    .internalmarketing .car_logo_block p, .combinemobilemarketing .car_logo_block p, .lookingmoredata .car_logo_block p {font-size: 18px;}
+    .internalmarketing .fillformdiv, .combinemobilemarketing .fillformdiv, .partnerswrapper .fillformdiv {font-size: 20px;}
+    .top_bannertext1 h2 {font-size: 30px;}
 
 
     .services_wrapper .sertextdiv {
         min-height: 225px;
     }
 
-
-    .middleblock_text h2{ font-size: 36px;}
 
     .middleblock_text h3{ width: 660px;}
 
@@ -79,6 +88,32 @@
 
 
 @media(max-width:1199px) {
+    .combinemobilemarketing {
+        background: #025f9a url(../../assets/images/combinemobilebg.png) no-repeat left top;
+        padding: 40px 0px;
+        position: relative;
+        overflow: hidden;
+        background-size: 115%;
+        padding-top: 50%;
+        text-align: center;
+    }
+    
+    .combinemobilemarketingcontent {
+        padding-left: 15px;
+        padding-right: 15px;
+        text-align: center;
+        padding-top: 30%;
+    }
+    .combinemobilemarketing h2 {
+        text-align: center;
+        background: url(../../assets/images/devider1.jpg) no-repeat center bottom;
+    }
+    .combinemobilemarketing .car_logo_block p {
+        text-align: center;
+    }
+    .cartext_wrapper h1 {
+        padding: 32px 0 20px 0;
+    }
     .services_wrapper .row {
         flex-wrap: wrap;
     }
@@ -101,7 +136,7 @@
 
     .topform_wrapper{ position: inherit; top: 0px; width: 100%; padding: 0 !important;}
     .topform_wrapper .form_mainbox{ width: 100%; float: none; margin: 0 auto; box-shadow: none; padding: 0; padding-bottom: 10px;}
-    .topform_wrapper .container{ width: 100%;}
+    .topform_wrapper .container{ width: 100%;padding-right: 0;padding-left: 0;}
 
     .bannertoptextcon{ position: absolute; bottom: 0px; width: 100%;}
 
@@ -155,8 +190,8 @@
 
     .services_wrapper .sertextdiv h4{ width: 100%; height: auto; padding: 20px 10px; border: none; text-align: center; display: block;  margin: 0px;}
 
-    .partnerswrapper .fillformdiv{ width: 90%; background-image: none; line-height: 40px;}
-    .internalmarketing .fillformdiv{ width: 90%; background-image: none; line-height: 40px;}
+    .partnerswrapper .fillformdiv{line-height: 40px;}
+    .internalmarketing .fillformdiv{line-height: 40px;}
 
     .services_wrapper{ background:#025f9a; padding:40px 10px;}
 
@@ -191,10 +226,20 @@
 .lookingmoredatadiv {
     flex-wrap: wrap;
 }
-
+.lookingmoredata {
+    padding: 40px 0px 0;
+}
 }
 
 @media(max-width:767px) {
+    .middleblock_text h2, .cartext_wrapper h1, .internalmarketing h2, .combinemobilemarketing h2, .lookingmoredata h2, .partnerswrapper h2 {font-size: 24px;}
+    .internalmarketing .car_logo_block p, .combinemobilemarketing .car_logo_block p, .lookingmoredata .car_logo_block p {font-size: 16px;}
+    .internalmarketing .fillformdiv, .combinemobilemarketing .fillformdiv, .partnerswrapper .fillformdiv {font-size: 18px;}
+    .top_bannertext1 h2 {font-size: 28px;}
+
+    .combinemobilemarketingcontent {
+        padding-top: 34%;
+    }
     .container {
         padding-right: 0px !important;
         padding-left: 0px !important;
@@ -213,19 +258,17 @@
         position: inherit;
         width: 100%;
     }
-
-    .partnerswrapper h2{ font-size: 54px;}
-
-    .internalmarketing h2{ font-size: 54px;}
+    .cartext_wrapper h1 br{display: none;}
+    
 }
 
 @media(max-width:700px) {
     .middleblock_wrapper{ background: #ccc url(../../assets/images/bgimg1.jpg) no-repeat top right; background-size: 800px;  height:auto; padding:450px 0 0px 0!important; position: relative; }
-
-
-
 }
 
+@media(max-width:600px) {
+.middleblock_text h2 br{display: none;}
+}
 
 @media(max-width:480px) {
     .middleblock_wrapper{ background: #ccc url(../../assets/images/bgimg1.jpg) no-repeat top right; background-size: 500px;  height:auto; padding:290px 0 0px 0!important; position: relative; }

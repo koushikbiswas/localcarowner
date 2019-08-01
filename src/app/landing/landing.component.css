@@ -1,0 +1,4 @@
+.scroll-to-top{position:fixed;bottom:20px;right:30px;z-index:999999;border:none;outline:none;background-color:#ac2828;color:#fff;cursor:pointer;padding:5px 8px;border-radius:0;font-size:18px;opacity:0;transition:all .2s ease-in-out}
+.scroll-to-top a{color:#fff!important;padding: 2px; display: inline-block;}
+.scroll-to-top:hover{background-color:#ac2828; color:#fff!important;}
+.show-scrollTop{opacity:1;transition:all .2s ease-in-out} 

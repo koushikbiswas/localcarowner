@@ -1,3 +1,9 @@
+<span class="scroll-to-top" [ngClass]="{'show-scrollTop': windowScrolled}">
+  <a (click)="scrollToTop()">
+      <i class="fa fa-chevron-up"></i>
+  </a>
+</span>
+
 <div class="logomobile">
   <a href="javascript:void(0)"><img src="assets/images/logo.png"/></a>
 </div>
@@ -13,7 +19,7 @@
   </div>
 </div>
 
-<div class="container-fluid topform_wrapper">
+<div class="container-fluid topform_wrapper" id="form_maindiv">
   <div class="container">
     <div class="form_mainbox">
       <h1>Get your free report</h1>
@@ -23,41 +29,48 @@
         <form [formGroup]="myform" (submit)="doSubmit()">
           <div class="form-group">
             <input class="form-control" placeholder="First Name" type="text" [formControl]="myform.controls['fname']" (blur)="inputUntouch(myform, 'fname')" />
-            <span *ngIf="myform.controls['fname'].touched && !myform.controls['fname'].valid" class="errortext" >First Name is required</span>
+            <!-- <span *ngIf="myform.controls['fname'].touched && !myform.controls['fname'].valid" class="errortext" >First Name is required</span> -->
+            <span *ngIf="formSubmited && formValidate.fname.errors" class="errortext" >First Name is required</span>
           </div>
           <div class="form-group">
             <input class="form-control" placeholder="Last Name" type="text" [formControl]="myform.controls['lname']"
  (blur)="inputUntouch(myform, 'lname')"/>
-            <span *ngIf="myform.controls['lname'].touched && !myform.controls['lname'].valid" class="errortext">Last Name is required</span>
+            <!-- <span *ngIf="myform.controls['lname'].touched && !myform.controls['lname'].valid" class="errortext">Last Name is required</span> -->
+            <span *ngIf="formSubmited && formValidate.lname.errors" class="errortext" >Last Name is required</span>
           </div>
 
           <div class="form-group">
             <input class="form-control" placeholder="Dealership" type="text" [formControl]="myform.controls['dealer']" (blur)="inputUntouch(myform, 'dealer')"/>
-            <span *ngIf="myform.controls['dealer'].touched && !myform.controls['dealer'].valid" class="errortext">Last Name is required</span>
+            <!-- <span *ngIf="myform.controls['dealer'].touched && !myform.controls['dealer'].valid" class="errortext">Last Name is required</span> -->
+            <span *ngIf="formSubmited && formValidate.dealer.errors" class="errortext" >Dealer Name is required</span>
           </div>
 
           <div class="form-group">
             <input class="form-control" placeholder="Email" type="email" [formControl]="myform.controls['email']"
  (blur)="inputUntouch(myform, 'email')"/>
-            <span *ngIf="myform.controls['email'].touched && !myform.controls['email'].valid" class="errortext">Email Number is required</span>
+            <!-- <span *ngIf="myform.controls['email'].touched && !myform.controls['email'].valid" class="errortext">Email Number is required</span> -->
+            <span *ngIf="formSubmited && formValidate.email.errors" class="errortext" >Email Number is required</span>
           </div>
 
           <div class="form-group">
             <input class="form-control" placeholder="Phone Number" type="text" [formControl]="myform.controls['phone']"
  (blur)="inputUntouch(myform, 'phone')"/>
-            <span *ngIf="myform.controls['phone'].touched && !myform.controls['phone'].valid" class="errortext">Phone Number is required</span>
+            <!-- <span *ngIf="myform.controls['phone'].touched && !myform.controls['phone'].valid" class="errortext">Phone Number is required</span> -->
+            <span *ngIf="formSubmited && formValidate.phone.errors" class="errortext" >Phone Number is required</span>
           </div>
 
           <div class="form-group">
             <input class="form-control" placeholder="Zip Code" type="text" [formControl]="myform.controls['zipcode']"
  (blur)="inputUntouch(myform, 'zipcode')"/>
- <span *ngIf="myform.controls['zipcode'].touched && !myform.controls['zipcode'].valid" class="errortext">Zip Code is required</span>
+ <!-- <span *ngIf="myform.controls['zipcode'].touched && !myform.controls['zipcode'].valid" class="errortext">Zip Code is required</span> -->
+ <span *ngIf="formSubmited && formValidate.zipcode.errors" class="errortext" >Zip Code is required</span>
           </div>
 
           <div class="form-group">
               <input class="form-control" placeholder="Additional Zip Code" type="text" [formControl]="myform.controls['addzipcode']"
    (blur)="inputUntouch(myform, 'addzipcode')"/>
-   <span *ngIf="myform.controls['addzipcode'].touched && !myform.controls['addzipcode'].valid" class="errortext">Zip Code is required</span>
+   <!-- <span *ngIf="myform.controls['addzipcode'].touched && !myform.controls['addzipcode'].valid" class="errortext">Zip Code is required</span> -->
+   <span *ngIf="formSubmited && formValidate.addzipcode.errors" class="errortext" >Additional Zip Code is required</span>
           </div>
 
           <div class="form-group">
@@ -165,7 +178,7 @@
         <div class="clearfix"></div>
       </div>
     
-      <div class="fillformdiv">Get your free report and let’s get started!</div>
+      <a class="fillformdiv" (click)="toTop()">Get your free report and let’s get started!</a>
   </div>
 
     
@@ -183,7 +196,7 @@
       
       <div class="clearfix"></div>
       </div>    
-      <div class="fillformdiv">Get your free report and let’s get started!</div>
+      <a class="fillformdiv" (click)="toTop()">Get your free report and let’s get started!</a>
     </div>  
   </div>
 
@@ -329,7 +342,7 @@
     <div class="clearfix"></div>
   </div>
 
-  <div class="fillformdiv">Fill out form above to get started right away!</div>
+  <a class="fillformdiv" (click)="toTop()">Fill out form above to get started right away!</a>
 </div>
 
 <div class=" container-fluid footer_newblock_wrapper">  

@@ -74,7 +74,7 @@ p{ margin:0; padding:0;}
 
 .row{ margin-left:0px; margin-right:0px; padding-left:0px; padding-right:0px;}
 
-.partnerswrapper{ background:#00a9e7; padding:40px 0px;}
+.partnerswrapper{ background:#00a9e7; padding:40px 0px; text-align: center;}
 
 .partnerswrapper h2{  font-family:'OpenSans-Bold'; font-size:60px; color:#fff; text-transform:uppercase; text-shadow:0 0 5px #888; margin:0; padding:0 0 20px 0; text-align:center; background:url(../../assets/images/devider1.jpg) no-repeat center bottom;}
 
@@ -82,9 +82,20 @@ p{ margin:0; padding:0;}
 
 .partnerswrapper .car_logo_block img{ padding:0; margin:6px 4px; box-shadow:0 0 8px #888;}
 
-.partnerswrapper .fillformdiv{ width:1080px; margin:0 auto; background:#eaff00 url(../../assets/images/arrow1.png) no-repeat 1010px center; text-align: center; font-size:34px; color:#002a45; cursor: pointer;
+/* .partnerswrapper .fillformdiv{ width:1080px; margin:0 auto; background:#eaff00 url(../../assets/images/arrow1.png) no-repeat 1010px center; text-align: center; font-size:34px; color:#002a45; cursor: pointer; font-family:'OpenSans-Bold'; text-transform:uppercase; padding:16px 0;}*/
 
-    font-family:'OpenSans-Bold'; text-transform:uppercase; padding:16px 0;}
+
+.partnerswrapper .fillformdiv{ width: auto;
+    margin: 0;
+    background: #eaff00 url(../../assets/images/arrow1.png) no-repeat right 14px center;
+    text-align: center;
+    font-size: 34px;
+    color: #002a45;
+    cursor: pointer;
+    font-family: 'OpenSans-Bold';
+    text-transform: uppercase;
+    padding: 16px 36px;
+    display: inline-block;}
 
 .footerwrapper{ padding:30px 0; background:#fff;}
 
@@ -175,10 +186,10 @@ p{ margin:0; padding:0;}
 .top_bannertext2{ background:url("../../assets/images/textbg2.jpg") left top;}
 
 
-.top_bannertext2 h2{ width: 880px; text-align: center; margin: 0; padding: 23px 0;  font-size: 30px; color: #012b2e; font-family:'OpenSans-Bold';  text-shadow: 0 0 6px #04b5c0;  position: relative; z-index: 9;}
+.top_bannertext2 h2{ width: 810px; text-align: center; margin: 0; padding: 23px 0;  font-size: 30px; color: #012b2e; font-family:'OpenSans-Bold';  text-shadow: 0 0 6px #04b5c0;  position: relative; z-index: 9;}
 
 
-.topform_wrapper{ position: absolute; top: 227px; width: 100%;}
+.topform_wrapper{ position: absolute; top: 227px; width: 100%; z-index: 99;}
 
 .topform_wrapper .form_mainbox{ background: #fff; width: 390px; float: right; margin-right: -90px; -webkit-box-shadow: 0px 0px 20px -4px rgba(0,0,0,0.75);
     -moz-box-shadow: 0px 0px 20px -4px rgba(0,0,0,0.75);
@@ -388,11 +399,11 @@ p{ margin:0; padding:0;}
 .footer_newblock_wrapper .footer_newblocklink a span{ display: block; margin-top: 81px;  font-family:Arial, Helvetica, sans-serif; font-size:18px; color:#4c3107;     text-shadow: 0 2px 8px #888;}
 
 
-.internalmarketing{background: url(../../assets/images/residemtialgeobg.jpg) left top; padding:40px 0px; position: relative; overflow: hidden;}
+.internalmarketing{background: url(../../assets/images/residemtialgeobg.jpg) left top; padding:40px 0px; position: relative; overflow: hidden; background-size: cover;}
 .internalmarketingbgcolor{position: absolute; top:0; left: 0; width: 100%; height: 100%; background-color: rgba(11, 47, 69, 0.9);}
 .internalmarketingcontent{position:relative; z-index:99;  text-align: center;}
 .internalmarketing h2{  font-family:'OpenSans-Bold'; font-size:60px; color:#fff; text-transform:uppercase; text-shadow:0 0 5px #888; margin:0; padding:0 0 20px 0; text-align:center; background:url(../../assets/images/devider1.jpg) no-repeat center bottom;}
-.internalmarketing .car_logo_block p{  font-family:'OpenSans-Regular'; font-size:24px; color:#fff; margin:0; padding:0; text-align:center;}
+.internalmarketing .car_logo_block p{  font-family:'OpenSans-Regular'; font-size:22px; color:#fff; margin:0; padding:0; text-align:center;}
 .internalmarketing .car_logo_block p span{margin-top:20px; display: inline-block; width: 100%;}
 .internalmarketing .car_logo_block{ text-align:center; width:1650px; margin:40px auto;}
 .internalmarketing .car_logo_block img{ padding:0; margin:6px 4px; box-shadow:0 0 8px #888;}
@@ -409,12 +420,13 @@ p{ margin:0; padding:0;}
     padding: 16px 36px;
     display: inline-block;
 }
-
+a.fillformdiv{text-decoration: none;}
+a.fillformdiv:hover{text-decoration: none;}
 
 .combinemobilemarketing{background: #025f9a url(../../assets/images/combinemobilebg.png) no-repeat left bottom; padding:40px 0px; position: relative; overflow: hidden;}
 .combinemobilemarketingcontent{position:relative; z-index:99; padding-left:38%;}
 .combinemobilemarketing h2{  font-family:'OpenSans-Bold'; font-size:60px; color:#fff; text-transform:uppercase; text-shadow:0 0 5px #888; margin:0; padding:0 0 20px 0; text-align:left; background:url(../../assets/images/devider1.jpg) no-repeat left bottom;}
-.combinemobilemarketing .car_logo_block p{  font-family:'OpenSans-Regular'; font-size:24px; color:#fff; margin:0; padding:0; text-align:left;}
+.combinemobilemarketing .car_logo_block p{  font-family:'OpenSans-Regular'; font-size:22px; color:#fff; margin:0; padding:0; text-align:left;}
 .combinemobilemarketing .car_logo_block p span{margin-top:20px; display: inline-block; width: 100%;}
 .combinemobilemarketing .car_logo_block{ text-align:left; width:100%; margin:40px auto;}
 .combinemobilemarketing .car_logo_block img{ padding:0; margin:6px 4px; box-shadow:0 0 8px #888;}
@@ -435,11 +447,11 @@ p{ margin:0; padding:0;}
 
 
 
-.lookingmoredata{background: url(../../assets/images/lookingmoredatabg.jpg) left top; padding:40px 0px; position: relative; overflow: hidden;}
+.lookingmoredata{background: url(../../assets/images/lookingmoredatabg.jpg) left top; padding:40px 0px; position: relative; overflow: hidden;background-size: cover;}
 .lookingmoredatabgcolor{position: absolute; top:0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 31, 42, 0.9);}
 .lookingmoredatacontent{position:relative; z-index:99;}
 .lookingmoredata h2{  font-family:'OpenSans-Bold'; font-size:60px; color:#fff; text-transform:uppercase; text-shadow:0 0 5px #888; margin:0; padding:0 0 20px 0; text-align:center; background:url(../../assets/images/devider1.jpg) no-repeat center bottom;}
-.lookingmoredata .car_logo_block p{  font-family:'OpenSans-Regular'; font-size:24px; color:#fff; margin:0; padding:0; text-align:center;}
+.lookingmoredata .car_logo_block p{  font-family:'OpenSans-Regular'; font-size:22px; color:#fff; margin:0; padding:0; text-align:center;}
 .lookingmoredata .car_logo_block p span{margin-top:20px; display: inline-block; width: 100%;}
 .lookingmoredata .car_logo_block{ text-align:center; width: 100%; margin:40px auto;}
 .lookingmoredata .car_logo_block img{ padding:0; margin:6px 4px; box-shadow:0 0 8px #888;}
