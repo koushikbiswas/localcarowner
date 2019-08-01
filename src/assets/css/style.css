@@ -390,9 +390,9 @@ p{ margin:0; padding:0;}
 
 .footer_newblock_wrapper .footer_newblocklink{ width: 661px; height: 112px; margin: 0 auto; margin-top: 48px; background: url("../../assets/images/newgetstartedimg.png") no-repeat center top; }
 
-.footer_newblock_wrapper .footer_newblocklink a{ display: block; text-align: center; width: 100%;
-    height:100%;
-    overflow: hidden;}
+.footer_newblock_wrapper .footer_newblocklink a{ display: block; text-align: center; width: 100%; text-decoration: none; height:100%;overflow: hidden;}
+
+.footer_newblock_wrapper .footer_newblocklink a:hover{text-decoration: none;}
 
 .footer_newblock_wrapper .footer_newblocklink a h2{ display: none;}
 

@@ -6,6 +6,7 @@
 
 
 @media(max-width:1660px) {
+    .cartext_wrapper h1{padding-top: 30px;}
     .middleblock_text h2, .cartext_wrapper h1, .internalmarketing h2, .combinemobilemarketing h2, .lookingmoredata h2, .partnerswrapper h2 {font-size: 44px;}
     .internalmarketing .car_logo_block p, .combinemobilemarketing .car_logo_block p, .lookingmoredata .car_logo_block p {font-size: 20px;}
     .internalmarketing .fillformdiv, .combinemobilemarketing .fillformdiv, .partnerswrapper .fillformdiv {font-size: 20px;}
@@ -189,9 +190,6 @@
     .services_wrapper .sertextdiv{ height: auto; text-align: center; padding: 0px; margin: 0px;    min-height: 1px;}
 
     .services_wrapper .sertextdiv h4{ width: 100%; height: auto; padding: 20px 10px; border: none; text-align: center; display: block;  margin: 0px;}
-
-    .partnerswrapper .fillformdiv{line-height: 40px;}
-    .internalmarketing .fillformdiv{line-height: 40px;}
 
     .services_wrapper{ background:#025f9a; padding:40px 10px;}
 
