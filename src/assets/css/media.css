@@ -88,6 +88,9 @@
 
 
 @media(max-width:1199px) {
+    .top_bannerblock {
+        overflow: hidden;
+    }
     .combinemobilemarketing {
         background: #025f9a url(../../assets/images/combinemobilebg.png) no-repeat left top;
         padding: 40px 0px;
