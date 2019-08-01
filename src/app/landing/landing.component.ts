@@ -80,12 +80,12 @@ toTop() {
 
   doSubmit(){
     // this.successmodal = true;
+
     this.formSubmited = true;
     console.log(this.myform.value);
     if (this.myform.valid) {
-      let link = 'http://192.168.0.145/localcarownerformdetails';
-      // let link = '';
-      let data = {data: this.myform.value};
+      let link = 'http://166.62.39.137:5001/addlocalcarownerLanding';
+      let data = (this.myform.value);
       this.http.post(link, data)
           .subscribe(res => {
   
