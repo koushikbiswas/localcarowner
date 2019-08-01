@@ -7,7 +7,7 @@
 
 @media(max-width:1660px) {
     .cartext_wrapper h1{padding-top: 30px;}
-    .middleblock_text h2, .cartext_wrapper h1, .internalmarketing h2, .combinemobilemarketing h2, .lookingmoredata h2, .partnerswrapper h2 {font-size: 44px;}
+    .middleblock_text h2, .cartext_wrapper h1, .internalmarketing h2, .combinemobilemarketing h2, .lookingmoredata h2, .partnerswrapper h2 {font-size: 36px;}
     .internalmarketing .car_logo_block p, .combinemobilemarketing .car_logo_block p, .lookingmoredata .car_logo_block p {font-size: 20px;}
     .internalmarketing .fillformdiv, .combinemobilemarketing .fillformdiv, .partnerswrapper .fillformdiv {font-size: 20px;}
     .top_bannertext1 h2 {font-size: 32px;}
@@ -30,10 +30,6 @@
     .services_wrapper .sertextdiv {
         min-height: 225px;
     }
-
-
-    .middleblock_text h3{ width: 660px;}
-
 
     .cartext_wrapper{ width: 100%; height: auto; padding:0 20px!important; background: url("../../assets/images/text_middle_conbg.jpg") no-repeat; background-size: cover; }
 

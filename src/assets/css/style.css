@@ -139,19 +139,20 @@ p{ margin:0; padding:0;}
     background: #eaff00;
     min-height: 175px;
     display: flex;
-    align-items: stretch;
+    /* align-items: stretch; */
+    align-items: center;
 }
 
 .services_wrapper .sertextdiv h4{ border-left:solid 2px #ff006c; width:100%; margin:0; padding:0 5px; padding-left: 15px; display:table-cell; vertical-align:middle; font-size:20px; line-height: 26px; color:#002a45; font-family:'OpenSans-Bold';}
 
 
-.middleblock_wrapper{ background: #fff url(../../assets/images/bgimg1.jpg) no-repeat right center; height:475px; padding-right:600px !important; position: relative; }
+.middleblock_wrapper{ background: #fff url(../../assets/images/bgimg1.jpg) no-repeat right center; height:428px; padding-right:47% !important; position: relative; }
 
-.middleblock_text{ padding:40px 0 0 100px; }
+.middleblock_text{ padding:40px 0 0 10%; width: 100%;}
 
-.middleblock_text h2{ background:url(../../assets/images/devider2.jpg) no-repeat center bottom; margin:0; padding:0 0 20px 0; text-align:center;  text-shadow:0 0 2px #888; font-size:48px; color:#f30050; text-transform:uppercase;  font-family:'OpenSans-Bold';}
+.middleblock_text h2{ background:url(../../assets/images/devider2.jpg) no-repeat center bottom; margin:0; padding:0 0 20px 0;     width: 100%; text-align:center;  text-shadow:0 0 2px #888; font-size:48px; color:#f30050; text-transform:uppercase;  font-family:'OpenSans-Bold';}
 
-.middleblock_text h3{ background: #eaff00; padding: 20px; position: absolute; bottom: 50px; display: block; width: 900px; -webkit-box-shadow: 1px 1px 20px -6px rgba(0,0,0,0.75);
+.middleblock_text h3{ background: #eaff00; padding: 20px; position: relative;display: block; width: 100%; -webkit-box-shadow: 1px 1px 20px -6px rgba(0,0,0,0.75);
     -moz-box-shadow: 1px 1px 20px -6px rgba(0,0,0,0.75);
     box-shadow: 1px 1px 20px -6px rgba(0,0,0,0.75); border: solid 1px #ccc; font-size: 22px; color: #16191b; line-height: 30px; font-family:'OpenSans-Bold';}
 
@@ -423,7 +424,7 @@ p{ margin:0; padding:0;}
 a.fillformdiv{text-decoration: none;}
 a.fillformdiv:hover{text-decoration: none;}
 
-.combinemobilemarketing{background: #025f9a url(../../assets/images/combinemobilebg.png) no-repeat left bottom; padding:40px 0px; position: relative; overflow: hidden;}
+.combinemobilemarketing{background: #025f9a url(../../assets/images/combinemobilebg.png) no-repeat left center; padding:40px 0px; position: relative; overflow: hidden;}
 .combinemobilemarketingcontent{position:relative; z-index:99; padding-left:38%;}
 .combinemobilemarketing h2{  font-family:'OpenSans-Bold'; font-size:60px; color:#fff; text-transform:uppercase; text-shadow:0 0 5px #888; margin:0; padding:0 0 20px 0; text-align:left; background:url(../../assets/images/devider1.jpg) no-repeat left bottom;}
 .combinemobilemarketing .car_logo_block p{  font-family:'OpenSans-Regular'; font-size:22px; color:#fff; margin:0; padding:0; text-align:left;}
