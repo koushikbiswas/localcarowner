@@ -26,7 +26,7 @@
       <h2>This specialized targeted report is only a quick submission away!</h2>
 
       <div class="form_maindiv">
-        <form [formGroup]="myform" (submit)="doSubmit()">
+        <form [formGroup]="myform" (ngSubmit)="doSubmit(template)">
           <div class="form-group">
             <input class="form-control" placeholder="First Name" type="text" [formControl]="myform.controls['fname']" (blur)="inputUntouch(myform, 'fname')" />
             <span *ngIf="myform.controls['fname'].touched && !myform.controls['fname'].valid" class="errortext" >First Name is required</span>
@@ -74,7 +74,7 @@
           </div>
           <div class="form-group">
             <!-- <input class="" type="submit" value=""/> -->
-            <button type="submit" class="subbtn" data-toggle="modal" data-target="#myModal">
+            <button type="submit" class="subbtn" data-toggle="modal" >
               Get My Report
             </button>
           </div>
@@ -358,7 +358,7 @@
 </div>
 
 
-
+<!-- 
 <div *ngIf="successmodal == true" class="modal fade localcarpopup" id="myModal"  tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
@@ -376,7 +376,16 @@
       <div class="modal-footer"></div>
     </div>
   </div>
-</div>
+</div> -->
+
+
+<ng-template  #template>
+      <div class="modal-body text-center">
+        <button type="button" class="close" (click)="closep()">&times;</button>
+        <img alt="#" class="modallogo" src="assets/images/logo.png" />
+        <p>Thank you for your interest in the LocalCarOwner.com services. Our team will get back to your shortly.</p>
+      </div>
+</ng-template>
 
 
 <!-- Button to Open the Modal -->
