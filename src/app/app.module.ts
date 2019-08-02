@@ -4,6 +4,7 @@ import { ReactiveFormsModule, FormsModule} from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MetaModule } from '@ngx-meta/core';
+import {ModalModule} from 'ngx-bootstrap/modal';
 import { LandingComponent } from './landing/landing.component';
 import {HttpClientModule} from '@angular/common/http';
 @NgModule({
@@ -16,7 +17,8 @@ import {HttpClientModule} from '@angular/common/http';
     AppRoutingModule,MetaModule.forRoot(),
     ReactiveFormsModule, 
     FormsModule, 
-    HttpClientModule
+    HttpClientModule,
+    ModalModule.forRoot(),
   ],
   providers: [],
   bootstrap: [AppComponent]

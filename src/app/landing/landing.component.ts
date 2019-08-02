@@ -1,9 +1,9 @@
-import { Component, OnInit, HostListener } from '@angular/core';
+import { Component, OnInit, HostListener, TemplateRef } from '@angular/core';
 import { MetaService } from '@ngx-meta/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { HttpClient } from '@angular/common/http';
 import {Router, ActivatedRoute} from '@angular/router';
-
+import {BsModalRef, BsModalService} from 'ngx-bootstrap/modal';
 
 @Component({
   selector: 'app-landing',
@@ -11,12 +11,13 @@ import {Router, ActivatedRoute} from '@angular/router';
   styleUrls: ['./landing.component.css']
 })
 export class LandingComponent implements OnInit {
+  modalRef: BsModalRef;
   windowScrolled: boolean;
   public myform: FormGroup;
   public formSubmited: boolean = false;
   public successmodal: any = false;
 
-  constructor(public router: Router, public route: ActivatedRoute, private readonly meta: MetaService, public fb: FormBuilder, public http: HttpClient) {
+  constructor(public router: Router, public route: ActivatedRoute, private readonly meta: MetaService, public fb: FormBuilder, public http: HttpClient, private modalService: BsModalService) {
     
     this.meta.setTitle('Local Car Owner ');
     this.meta.setTag('og:description', 'THE ULTIMATE IN DIGITAL MARKETING FOR NEW CAR DEALERSHIPS! ');
@@ -78,9 +79,10 @@ toTop() {
 
   // get formValidate() { return this.myform.controls; }
 
-  doSubmit(){
-    document.getElementById("myModal")
-    this.successmodal = true;
+  doSubmit(template: TemplateRef<any>){
+    
+    // document.getElementById("myModal")
+    // this.successmodal = true;
 
     this.formSubmited = true;
     console.log(this.myform.value);
@@ -101,12 +103,17 @@ toTop() {
   
               this.myform.reset();
               setTimeout(()=>{
-                this.successmodal = true;
-                console.log(this.successmodal)
+                this.modalRef = this.modalService.show(template, {class: 'modal-md localcarpopup'});
+                // this.successmodal = true;
+                // console.log(this.successmodal)
               },4000);
            }
          })
       }
+  }
+
+  closep(){
+    this.modalRef.hide();
   }
 
   inputUntouch(form: any, val: any) {
