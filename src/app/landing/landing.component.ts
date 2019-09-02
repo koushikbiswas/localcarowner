@@ -77,13 +77,9 @@ toTop() {
       );
   }
 
-  // get formValidate() { return this.myform.controls; }
 
   doSubmit(template: TemplateRef<any>){
     
-    // document.getElementById("myModal")
-    // this.successmodal = true;
-
     this.formSubmited = true;
     console.log(this.myform.value);
     for (let i in this.myform.controls) {
@@ -104,8 +100,6 @@ toTop() {
               this.myform.reset();
               setTimeout(()=>{
                 this.modalRef = this.modalService.show(template, {class: 'modal-md localcarpopup'});
-                // this.successmodal = true;
-                // console.log(this.successmodal)
               },4000);
            }
          })

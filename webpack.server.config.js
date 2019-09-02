@@ -8,7 +8,7 @@ const webpack = require('webpack');
 module.exports = {
     mode: 'none',
     entry: {
-        server: './server.ts',
+        server_localcarowner: './server.ts',
     },
     target: 'node',
     resolve: { extensions: ['.ts', '.js'] },
